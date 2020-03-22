@@ -16,8 +16,10 @@ function App() {
         <div>
           Täglich, außer Sonntags von 17:30 - 23:30 geöffnet. <br />
           Warme Küche bis 22:30uhr.
+          <br />
+          <br />
         </div>
-        <h3>Telefon: 069 777721</h3>
+        <div>Bestellungen zum abholen bitte Telefonisch unter 069/777721.</div>
       </div>
       {data.sort(sortOrder).map((item, index) => (
         <div className="food-container" key={index}>
