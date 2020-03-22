@@ -13,7 +13,10 @@ function App() {
     <div className="container">
       <div className="intro-container">
         <h1>Taverne Plaka Speisekarte</h1>
-        <div>Jeden Tag außer Sonntag von 17:30 Uhr bis 23:30 Uhr geöffnet.</div>
+        <div>
+          Täglich, außer Sonntags von 17:30 - 23:30 geöffnet. <br />
+          Warme Küche bis 22:30uhr.
+        </div>
         <h3>Telefon: 069 777721</h3>
       </div>
       {data.sort(sortOrder).map((item, index) => (
