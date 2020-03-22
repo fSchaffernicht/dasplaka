@@ -1,0 +1,19 @@
+.item {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 4rem;
+}
+
+.item-headline {
+  color: #607d8b;
+  font-size: 2.2rem;
+}
+
+.item-text {
+  color: #795548;
+}
+
+.item-price {
+  color: #795548;
+}
