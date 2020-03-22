@@ -159,31 +159,6 @@
     ]
   },
   {
-    "order": 1,
-    "headline": "Suppen",
-    "info": null,
-    "items": [
-      {
-        "headline": "Kotosupa",
-        "text": "Griechische Hühnersuppe mit Reis",
-        "price": 5.5,
-        "info": null
-      },
-      {
-        "headline": "Fasolada",
-        "text": "Deftige Bohnensuppe mit Knoblauch & Zwiebeln",
-        "price": 5.5,
-        "info": null
-      },
-      {
-        "headline": "Jouvarlakia",
-        "text": "Griechische Zitronensuppe mit Avgolemono und Fleischbällchen",
-        "price": 6.5,
-        "info": null
-      }
-    ]
-  },
-  {
     "order": 4,
     "headline": "\"Skaras\" Vom Grill",
     "info": "Alle unsere Grillgerichte werden mit Tagesbeilagen serviert.",
