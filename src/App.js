@@ -1,6 +1,6 @@
 import React from "react"
 
-import { Item } from "./components"
+import { Item, Alert } from "./components"
 
 import data from "./data.json"
 
@@ -8,9 +8,13 @@ function sortOrder(a, b) {
   return a.order - b.order
 }
 
+const vacationDate = new Date('09-02-2021')
+const showUntil = new Date() <= vacationDate
+
 function App() {
   return (
     <div className="container">
+      <Alert show={showUntil}>Liebe Gäste, wir sind bis zum <strong>2. September</strong> im Urlaub. Danach sind wir wieder wie gewohnt für Sie da.</Alert>
       <div className="intro-container">
         <h1>Taverne Plaka Speisekarte</h1>
         <div>
