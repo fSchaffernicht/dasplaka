@@ -7,37 +7,37 @@
       {
         "headline": "Giouvetsi",
         "text": "Traditioneller Lammeintopf mit Kritharaki",
-        "price": 14,
+        "price": 14.5,
         "info": null
       },
       {
         "headline": "Kokinisto",
         "text": "Traditionelles Lammgulasch mit Auberginen & Kartoffeln",
-        "price": 15,
+        "price": 16,
         "info": null
       },
       {
         "headline": "Lammkrasato",
         "text": "Lammgeschnetzeltes mit Zwiebeln & Paprika in Rotwein-Tomatensauce",
-        "price": 14.5,
+        "price": 15.5,
         "info": null
       },
       {
         "headline": "Hähnchenkrasato",
         "text": "Hähnchengeschnetzeltes mit Pilzen in Weißwein-Sahnesauce",
-        "price": 12.5,
+        "price": 14,
         "info": null
       },
       {
         "headline": "Riganato",
         "text": "Traditionelles Schweinegeschnetzeltes in Oregano-Feta Sauce",
-        "price": 12.5,
+        "price": 14,
         "info": null
       },
       {
         "headline": "Moussaka",
         "text": "Hackfleisch-Kartoffel-Auberginenauflauf mit Bechamelcreme",
-        "price": 12.5,
+        "price": 15,
         "info": null
       }
     ]
@@ -50,25 +50,25 @@
       {
         "headline": "Gebratene Calamari",
         "text": "Leicht mehliert und kross gebratene Baby-Calamari mit Zaziki",
-        "price": 13.5,
+        "price": 14.5,
         "info": null
       },
       {
         "headline": "Gegrillte Calamari",
         "text": "Mediterran gewürzte, gegrillte Baby-Calamari in Knoblauch-Oregano-Olivenöl Dressing",
-        "price": 13.5,
+        "price": 14.5,
         "info": null
       },
       {
         "headline": "Gefüllte Calamari",
         "text": "Mit Feta gefüllte Baby-Calamari vom Grill",
-        "price": 14.5,
+        "price": 16,
         "info": null
       },
       {
         "headline": "Calamari Teller",
         "text": "Fritierte & gefüllte Baby-Calamari mit Zaziki",
-        "price": 16.5,
+        "price": 17.5,
         "info": null
       },
       {
@@ -80,25 +80,19 @@
       {
         "headline": "Tsipoúra - Dorade",
         "text": "Saftig gegrillte Dorade mit \"Ladolemono\" Dressing",
-        "price": 16.5,
+        "price": 17,
         "info": "Wahlweise filetiert oder ganz"
       },
       {
         "headline": "Lavraki - Wolfsbarsch",
         "text": "Saftig gegrillter Wolfsbarsch mit \"Ladolemono\" Dressing",
-        "price": 16.5,
-        "info": "Wahlweise filetiert oder ganz"
-      },
-      {
-        "headline": "Lavraki - Wolfsbarsch",
-        "text": "Saftig gegrillter Wolfsbarsch mit \"Ladolemono\" Dressing",
-        "price": 16.5,
+        "price": 17,
         "info": "Wahlweise filetiert oder ganz"
       },
       {
         "headline": "Fischteller",
         "text": "Gebratene Calamari, gebratene Sardellen und ein Filet der Dorade",
-        "price": 18.5,
+        "price": 19.5,
         "info": "Wahlweise für eine oder mehrere Personen"
       },
       {
@@ -110,13 +104,13 @@
       {
         "headline": "Oktapus",
         "text": "Gegrillter Oktapus mit Balsamico-Olivenöl-Oregano Dressing",
-        "price": 11,
+        "price": 13.5,
         "info": null
       },
       {
         "headline": "Thalassino Souvlaki",
         "text": "Mediterran gewürzte Calamari, Garnelen und fischfilets am Spieß gegrillt",
-        "price": 17,
+        "price": 18,
         "info": null
       },
       {
@@ -135,7 +129,7 @@
       {
         "headline": "Horiatiki",
         "text": "Griechischer Bauernsalat mit Oliven, Zwiebeln, Pepperonis, Gurken, Tomaten und Feta",
-        "price": 7.5,
+        "price": 8.5,
         "info": null
       },
       {
@@ -147,13 +141,13 @@
       {
         "headline": "Beilagensalat",
         "text": null,
-        "price": 2.5,
+        "price": 3.5,
         "info": null
       },
       {
         "headline": "Horiatiki",
         "text": "Mit Wahlweise Gyros, Calamari, Hähnchen oder Haloumi",
-        "price": 9.5,
+        "price": 12,
         "info": null
       }
     ]
@@ -166,13 +160,13 @@
       {
         "headline": "Gyros",
         "text": "Würziges Schweinegeschnetzeltes vom Grill mit Zwiebeln und Zaziki",
-        "price": 13.5,
+        "price": 14.5,
         "info": null
       },
       {
         "headline": "Bifteki",
         "text": "Rustikal gewürzt und saftig gegrilltes Hacksteak mit käsefüllung",
-        "price": 13.5,
+        "price": 14.5,
         "info": null
       },
       {
@@ -184,31 +178,31 @@
       {
         "headline": "Lamm Souvlaki",
         "text": "Rustikal gewürzte Lammspieße mit Knoblauch-Oregano Dressing",
-        "price": 15,
+        "price": 16,
         "info": null
       },
       {
         "headline": "Hähnchen Souvlaki",
         "text": "Saftige Hähnchenspieße vom unterschenkel mit Zitronen-Oregano Dressing",
-        "price": 13.5,
+        "price": 14.5,
         "info": null
       },
       {
         "headline": "Lammkoteletts",
         "text": "Mediterran gewürzte, zarte Lammkottelets mit Oregano-Knoblauch Dressing",
-        "price": 16.5,
+        "price": 18.5,
         "info": null
       },
       {
         "headline": "Keftedes me Melizana",
         "text": "In Auberginen eingewickelte mini Bifteki mit Tomatensauce und geriebenem Feta",
-        "price": 15,
+        "price": 16,
         "info": null
       },
       {
         "headline": "Mixed Grill",
         "text": "Gemischter Grillteller mit Souvlaki, Schweinekottelet, einem kleinen Bifteki, Gyros und Hähnchen",
-        "price": 15,
+        "price": 17.5,
         "info": "Wahlweise für eine oder mehrere Personen"
       }
     ]
@@ -227,13 +221,13 @@
       {
         "headline": "Taramas",
         "text": "Fischroggen Creme",
-        "price": 4.5,
+        "price": 6,
         "info": null
       },
       {
         "headline": "Melizanosalata",
         "text": "Auberginencreme mit Koblauch",
-        "price": 4.5,
+        "price": 6.5,
         "info": null
       },
       {
@@ -251,55 +245,55 @@
       {
         "headline": "Feta Skaras",
         "text": "In Alufolie gebackener Feta auf Zwiebeln,Tomaten & Paprika",
-        "price": 7.0,
+        "price": 7.5,
         "info": null
       },
       {
         "headline": "Saganaki",
         "text": "Gebackener Schafskäse neben Tomaten und Zwiebeln",
-        "price": 6.5,
+        "price": 7,
         "info": null
       },
       {
         "headline": "Sesam Saganaki",
         "text": "Gebackener Schafskäse in Sesampanade neben Tomaten und Zwiebeln",
-        "price": 7,
+        "price": 7.5,
         "info": null
       },
       {
         "headline": "Plaka Saganaki",
         "text": "In Filoteig eingewickelt und gebackener Feta mit Honig und Sesam",
-        "price": 8,
+        "price": 8.5,
         "info": null
       },
       {
         "headline": "Halloumi Saganaki",
         "text": "In Olivenöl gebackener Halloumi-Käse mit pikanten Gewürzen",
-        "price": 8,
+        "price": 8.5,
         "info": null
       },
       {
         "headline": "Gebackene Zucchini",
         "text": "Knusprig gebackene Zucchinischeiben mit Zaziki",
-        "price": 7.5,
+        "price": 8.5,
         "info": null
       },
       {
         "headline": "Gebackene Auberginen",
         "text": "Knusprig gebackene Auberginenscheiben mit Zaziki",
-        "price": 7.5,
+        "price": 8.5,
         "info": null
       },
       {
         "headline": "Zucchinipuffer",
         "text": "Knusprig gebackene Zucchinipuffer mit Zaziki",
-        "price": 6,
+        "price": 7,
         "info": null
       },
       {
         "headline": "Auberginenrollen",
         "text": "Mit Feta gefüllte Auberginenröllchen in Tomtatensoße",
-        "price": 8,
+        "price": 8.5,
         "info": null
       },
       {
@@ -311,7 +305,7 @@
       {
         "headline": "Zigaropitakia",
         "text": "Gefüllte Blätterteigröllchen neben Zaziki",
-        "price": 6,
+        "price": 6.5,
         "info": null
       },
       {
@@ -323,19 +317,19 @@
       {
         "headline": "Pepperoni",
         "text": "Gegrillte pepperonischoten mit Knoblauch & Olivenöl",
-        "price": 5,
+        "price": 6,
         "info": null
       },
       {
         "headline": "Bamjes",
         "text": "Saftige Okraschoten in Tomatensoße und geriebenem Feta",
-        "price": 7,
+        "price": 8.5,
         "info": null
       },
       {
         "headline": "Keftedakia",
         "text": "Gegrillte Hackfleischbällchen in Tomatensoße",
-        "price": 6.5,
+        "price": 7.5,
         "info": null
       },
       {
@@ -353,19 +347,19 @@
       {
         "headline": "Piperies Florinis",
         "text": "Gegrillte & gefüllte rote Spitzpaprika mit Olivenöl & Feta",
-        "price": 8,
+        "price": 8.5,
         "info": null
       },
       {
         "headline": "Piperies Tiganites",
         "text": "Gebratene grüne Spitzpaprika mit Olivenöl & Balsamico",
-        "price": 8,
+        "price": 6,
         "info": null
       },
       {
         "headline": "Mezés",
         "text": "Gemischter Vorspeisenteller mit warmen & kalten Vorspeisen",
-        "price": 9.5,
+        "price": 9.9,
         "info": "Wahlweise für eine oder mehrere Personen."
       }
     ]
