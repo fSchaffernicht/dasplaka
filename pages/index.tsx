@@ -1,12 +1,9 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from "next"
+import Head from "next/head"
 
-import { Item } from "../components";
-import data from "./data.json";
+import { Item } from "@components"
 
-function sortOrder(a: any, b: any) {
-  return a.order - b.order;
-}
+import data from "./data.json"
 
 const Home: NextPage = () => {
   return (
@@ -33,24 +30,26 @@ const Home: NextPage = () => {
             Bestellungen zum abholen bitte Telefonisch unter 069/777721.
           </div>
         </div>
-        {data.sort(sortOrder).map((item, index) => (
-          <div className="food-container" key={index}>
-            <div className="food-headline-wrapper">
-              <h2>{item.headline}</h2>
+        {data
+          .sort((a, b) => a.order - b.order)
+          .map((item, index) => (
+            <div className="food-container" key={index}>
+              <div className="food-headline-wrapper">
+                <h2>{item.headline}</h2>
+              </div>
+              <div className="food-items-wrapper">
+                {item.items.map((subItem, subIndex) => (
+                  <Item
+                    key={subIndex}
+                    headline={subItem.headline}
+                    text={subItem.text ?? ""}
+                    price={subItem.price}
+                    sub={subItem.info ?? ""}
+                  />
+                ))}
+              </div>
             </div>
-            <div className="food-items-wrapper">
-              {item.items.map((subItem, subIndex) => (
-                <Item
-                  key={subIndex}
-                  headline={subItem.headline}
-                  text={subItem.text}
-                  price={subItem.price}
-                  sub={subItem.info}
-                />
-              ))}
-            </div>
-          </div>
-        ))}
+          ))}
         {
           <div className="imprint-container">
             <h3>Impressum</h3>
@@ -62,7 +61,7 @@ const Home: NextPage = () => {
         }
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home
