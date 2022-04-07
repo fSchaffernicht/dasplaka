@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
+
 body {
   margin: 0;
   font-family: "Libre Baskerville", serif;
@@ -36,7 +38,9 @@ h3 {
 .food-container {
   display: flex;
   flex-direction: column;
-  @media only screen and (min-width: 960px) {
+}
+@media only screen and (min-width: 960px) {
+  .food-container {
     flex-direction: row;
   }
 }
@@ -49,8 +53,9 @@ h3 {
 .food-items-wrapper {
   display: flex;
   flex-direction: column;
-
-  @media only screen and (min-width: 960px) {
+}
+@media only screen and (min-width: 960px) {
+  .food-items-wrapper {
     background: rgb(43, 21, 28);
     color: white;
     padding: 2rem;
