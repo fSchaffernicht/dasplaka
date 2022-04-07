@@ -12,8 +12,11 @@ const Home: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Das Plaka</title>
-        <meta name="description" content="Taverne Plaka Speisekarte" />
+        <title>Plaka Taverne</title>
+        <meta
+          name="description"
+          content="Die kleine griechische Taverne in Frankfurt am Main."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
