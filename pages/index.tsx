@@ -1,11 +1,20 @@
-import type { NextPage } from "next"
+import type { GetStaticPropsContext } from "next"
 import Head from "next/head"
 
-import { Item } from "@components"
+import { Food, Header, Message } from "@components"
+import { client } from "@services"
 
-import data from "./data.json"
+import { Food as FoodType, Category } from "@types"
 
-const Home: NextPage = () => {
+interface ItemsWithCategory extends Category {
+  items: FoodType[]
+}
+interface Props {
+  data: ItemsWithCategory[]
+  message: any
+}
+
+export default function Home({ data, message }: Props) {
   return (
     <>
       <Head>
@@ -18,50 +27,78 @@ const Home: NextPage = () => {
       </Head>
 
       <div className="container">
-        <div className="intro-container">
-          <h1>Taverne Plaka Speisekarte</h1>
-          <div>
-            Täglich, außer Sonntags von 17:30 - 23:30 geöffnet. <br />
-            Warme Küche bis 22:30uhr.
-            <br />
-            <br />
-          </div>
-          <div>
-            Bestellungen zum abholen bitte Telefonisch unter 069/777721.
-          </div>
-        </div>
+        <Message message={message} />
+        <Header />
         {data
           .sort((a, b) => a.order - b.order)
           .map((item, index) => (
             <div className="food-container" key={index}>
               <div className="food-headline-wrapper">
-                <h2>{item.headline}</h2>
+                <div>
+                  <h2>{item.title}</h2>
+                  <p>{item.info}</p>
+                </div>
               </div>
               <div className="food-items-wrapper">
                 {item.items.map((subItem, subIndex) => (
-                  <Item
+                  <Food
                     key={subIndex}
-                    headline={subItem.headline}
-                    text={subItem.text ?? ""}
-                    price={subItem.price}
+                    headline={subItem.title}
+                    text={subItem.description ?? ""}
+                    price={Number(subItem.price)}
                     sub={subItem.info ?? ""}
                   />
                 ))}
               </div>
             </div>
           ))}
-        {
-          <div className="imprint-container">
-            <h3>Impressum</h3>
-            <small>
-              Inhaber: Konstantinos Conidas | Telefon: 069 777721 | E-Mail:
-              k_conidas@rocketmail.com
-            </small>
-          </div>
-        }
+        <div className="imprint-container">
+          <h3>Impressum</h3>
+          <small>
+            Inhaber: Konstantinos Conidas | Telefon: 069 777721 | E-Mail:
+            k_conidas@rocketmail.com
+          </small>
+        </div>
       </div>
     </>
   )
 }
 
-export default Home
+export async function getStaticProps(context: GetStaticPropsContext) {
+  try {
+    const connection = await client
+
+    const db = connection.db("food")
+
+    const categoriesCollection = db.collection("categories")
+    const foodsCollection = db.collection("foods")
+    const messageCollection = db.collection("message")
+
+    const categories = await categoriesCollection
+      .find()
+      .sort("order", 1)
+      .toArray()
+
+    const result = []
+
+    for await (const category of categories) {
+      const foods = await foodsCollection
+        .find({ group: Number(category.groupId), isAvailable: true })
+        .sort("order", 1)
+        .toArray()
+
+      result.push({ ...category, items: foods })
+    }
+
+    const message = await messageCollection.findOne()
+
+    return {
+      props: {
+        data: JSON.parse(JSON.stringify(result)),
+        message: JSON.parse(JSON.stringify(message)),
+      },
+    }
+  } catch (e) {
+    throw e
+  }
+}

@@ -1,0 +1,6 @@
+.message {
+  padding: 1rem;
+  background: orange;
+  position: sticky;
+  top: 0;
+}

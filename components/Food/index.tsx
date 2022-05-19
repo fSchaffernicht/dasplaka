@@ -1,14 +1,14 @@
 import React from "react"
-import styles from "./Item.module.css"
+import styles from "./Food.module.css"
 
-interface ItemProps {
+interface Props {
   headline: string
   text: string
   price: number
   sub?: string
 }
 
-export function Item({ headline, text, sub, price }: ItemProps) {
+export default function Food({ headline, text, sub, price }: Props) {
   return (
     <div className={styles.item}>
       <div className={styles["item-text-wrapper"]}>
